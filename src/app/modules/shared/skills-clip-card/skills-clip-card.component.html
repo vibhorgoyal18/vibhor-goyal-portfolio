@@ -1,0 +1,26 @@
+<div class="d-flex clip-box" [style.clip-path]="getClipPath()">
+  <span [style]="getIconPosition()">i</span>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-10  font-lucidia">
+      {{title}}
+    </div>
+    <div class="col-5 font-lucidia">
+      Total Experience
+    </div>
+    <div class="col-5 font-lucidia">
+    {{experience}}
+    </div>
+    <div class="col-5 font-lucidia">
+      Ratings
+    </div>
+    <div class="col-5 font-lucidia">
+      {{rating}}
+    </div>
+    <div class="col-5 font-lucidia" *ngIf="lastUsed">
+      Last Used
+    </div>
+    <div class="col-5 font-lucidia" *ngIf="lastUsed">
+      {{lastUsed}}
+    </div>
+  </div>
+</div>
