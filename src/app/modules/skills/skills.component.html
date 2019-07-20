@@ -36,10 +36,10 @@
           </mat-card-header>
           <mat-card-content>
             <ul class="text-grey">
-              <li>Selenium</li>
-              <li>Appium</li>
-              <li>Rest Assured</li>
-              <li>Postman</li>
+              <li #selenium>Selenium</li>
+              <li #appium>Appium</li>
+              <li #restAssured>Rest Assured</li>
+              <li #postman>Postman</li>
             </ul>
           </mat-card-content>
         </div>
@@ -47,53 +47,250 @@
           [title]="'Selenium'"
           [experience]="'2 years'"
           [rating]="'4/5'"
-          [clipCSS]="'circle(7px at 130px 60px)'"
-          [iLeft]="'129px'"
-          [iTop]="'52px'"
+          [clipCSS]="getClipPath(selenium)"
+          [iLeft]="getIConPositionLeft(selenium)"
+          [iTop]="getIConPositionTop(selenium)"
           [lastUsed]="2019"
         ></app-skills-clip-card>
         <app-skills-clip-card
           [title]="'Appium'"
           [experience]="'5 months'"
           [rating]="'2/5'"
-          [clipCSS]="'circle(7px at 120px 80px)'"
-          [iLeft]="'119px'"
-          [iTop]="'72px'"
+          [clipCSS]="getClipPath(appium)"
+          [iLeft]="getIConPositionLeft(appium)"
+          [iTop]="getIConPositionTop(appium)"
           [lastUsed]="2018"
         ></app-skills-clip-card>
         <app-skills-clip-card
           [title]="'Rest Assured'"
           [experience]="'6 months'"
           [rating]="'3/5'"
-          [clipCSS]="'circle(7px at 154px 100px)'"
-          [iLeft]="'153px'"
-          [iTop]="'92px'"
+          [clipCSS]="getClipPath(restAssured)"
+          [iLeft]="getIConPositionLeft(restAssured)"
+          [iTop]="getIConPositionTop(restAssured)"
           [lastUsed]="2019"
         ></app-skills-clip-card>
         <app-skills-clip-card
           [title]="'Postman'"
           [experience]="'1 year'"
           [rating]="'3/5'"
-          [clipCSS]="'circle(7px at 131px 120px)'"
-          [iLeft]="'130px'"
-          [iTop]="'112px'"
+          [clipCSS]="getClipPath(postman)"
+          [iLeft]="getIConPositionLeft(postman)"
+          [iTop]="getIConPositionTop(postman)"
           [lastUsed]="2019"
         ></app-skills-clip-card>
       </mat-card>
     </div>
     <div class="col-md-6 py-3">
       <mat-card>
-        <mat-card-header>
-          <h5 class="font-lucidia">Programming Languages</h5>
-        </mat-card-header>
-        <mat-card-content>
-          <ul class="text-grey">
-            <li>Core Java</li>
-            <li>Python</li>
-            <li>Angular</li>
-            <li>NodeJS</li>
-          </ul>
-        </mat-card-content>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">Programming Languages</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #java>Core Java</li>
+              <li #python>Python</li>
+              <li #angular>Angular</li>
+              <li #nodejs>NodeJS</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'Core Java'"
+          [experience]="'2.5 years'"
+          [rating]="'4/5'"
+          [clipCSS]="getClipPath(java)"
+          [iLeft]="getIConPositionLeft(java)"
+          [iTop]="getIConPositionTop(java)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Python'"
+          [experience]="'5 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(python)"
+          [iLeft]="getIConPositionLeft(python)"
+          [iTop]="getIConPositionTop(python)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Angular'"
+          [experience]="'6 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(angular)"
+          [iLeft]="getIConPositionLeft(angular)"
+          [iTop]="getIConPositionTop(angular)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'NodeJS'"
+          [experience]="'1 year'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(nodejs)"
+          [iLeft]="getIConPositionLeft(nodejs)"
+          [iTop]="getIConPositionTop(nodejs)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+      </mat-card>
+    </div>
+    <div class="col-md-6 py-3">
+      <mat-card>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">Automation Frameworks</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #keywordDriven>Keyword driven framework</li>
+              <li #dataDriven>Data driven framework</li>
+              <li #testNG>TestNG</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'Keyword Driven Framework'"
+          [experience]="'2 months'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(keywordDriven)"
+          [iLeft]="getIConPositionLeft(keywordDriven)"
+          [iTop]="getIConPositionTop(keywordDriven)"
+          [lastUsed]="2016"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Data Driven Framework'"
+          [experience]="'2 years 5 months'"
+          [rating]="'4/5'"
+          [clipCSS]="getClipPath(dataDriven)"
+          [iLeft]="getIConPositionLeft(dataDriven)"
+          [iTop]="getIConPositionTop(dataDriven)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'TestNG'"
+          [experience]="'2 years 5 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(testNG)"
+          [iLeft]="getIConPositionLeft(testNG)"
+          [iTop]="getIConPositionTop(testNG)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+      </mat-card>
+    </div>
+    <div class="col-md-6 py-3">
+      <mat-card>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">Database</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #mysql>My SQL</li>
+              <li #sqlServer>SQL Server</li>
+              <li #oracleDB>Oracle DB</li>
+              <li #mongoDB>MongoDB</li>
+              <li #postgresSQL>PostgresSQL</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'My SQL'"
+          [experience]="'1 year 5 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(mysql)"
+          [iLeft]="getIConPositionLeft(mysql)"
+          [iTop]="getIConPositionTop(mysql)"
+          [lastUsed]="2017"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'SQL Server'"
+          [experience]="'2.5 years'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(sqlServer)"
+          [iLeft]="getIConPositionLeft(sqlServer)"
+          [iTop]="getIConPositionTop(sqlServer)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Oracle DB'"
+          [experience]="'6 months'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(oracleDB)"
+          [iLeft]="getIConPositionLeft(oracleDB)"
+          [iTop]="getIConPositionTop(oracleDB)"
+          [lastUsed]="2016"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'mongoDB(with ExpressJS ORM)'"
+          [experience]="'1 month'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(mongoDB)"
+          [iLeft]="getIConPositionLeft(mongoDB)"
+          [iTop]="getIConPositionTop(mongoDB)"
+          [lastUsed]="2018"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'PostgresSQL(with django ORM)'"
+          [experience]="'3 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(postgresSQL)"
+          [iLeft]="getIConPositionLeft(postgresSQL)"
+          [iTop]="getIConPositionTop(postgresSQL)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+      </mat-card>
+    </div>
+    <div class="col-md-6 py-3">
+      <mat-card>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">Other Skills/Frameworks</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #jenkins>Jenkins</li>
+              <li #angularFramework>Angular</li>
+              <li #django>Django</li>
+              <li #expressJS>ExpressJS</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'Jenkins'"
+          [experience]="'6 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(jenkins)"
+          [iLeft]="getIConPositionLeft(jenkins)"
+          [iTop]="getIConPositionTop(jenkins)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Angular'"
+          [experience]="'6 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(angularFramework)"
+          [iLeft]="getIConPositionLeft(angularFramework)"
+          [iTop]="getIConPositionTop(angularFramework)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Django'"
+          [experience]="'6 months'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(django)"
+          [iLeft]="getIConPositionLeft(django)"
+          [iTop]="getIConPositionTop(django)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'ExpressJS'"
+          [experience]="'1 month'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(expressJS)"
+          [iLeft]="getIConPositionLeft(expressJS)"
+          [iTop]="getIConPositionTop(expressJS)"
+          [lastUsed]="2018"
+        ></app-skills-clip-card>
       </mat-card>
     </div>
   </div>

@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {TimeDifference} from '../../services/time-difference';
-
 
 @Component({
   selector: 'app-intro',
@@ -8,12 +6,10 @@ import {TimeDifference} from '../../services/time-difference';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
-  experience: any;
 
-  constructor(private timeDiffSvc: TimeDifference) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.experience = this.timeDiffSvc.getExperience();
   }
 }
