@@ -1,19 +1,19 @@
-<div class="d-flex clip-box" [style.clip-path]="getClipPath()">
+<div class="d-flex clip-box" [style.-webkit-clip-path]="getClipPath()">
   <span [style]="getIconPosition()">i</span>
   <div class="row justify-content-center align-items-center">
     <div class="col-10  font-lucidia">
       {{title}}
     </div>
-    <div class="col-5 font-lucidia">
+    <div class="col-5 font-lucidia" *ngIf="experience">
       Total Experience
     </div>
-    <div class="col-5 font-lucidia">
+    <div class="col-5 font-lucidia" *ngIf="experience">
     {{experience}}
     </div>
-    <div class="col-5 font-lucidia">
+    <div class="col-5 font-lucidia" *ngIf="rating">
       Ratings
     </div>
-    <div class="col-5 font-lucidia">
+    <div class="col-5 font-lucidia" *ngIf="rating">
       {{rating}}
     </div>
     <div class="col-5 font-lucidia" *ngIf="lastUsed">

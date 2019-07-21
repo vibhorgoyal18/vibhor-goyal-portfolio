@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {TimeDifference} from '../../services/time-difference';
 
 @Component({
   selector: 'app-skills',
@@ -7,11 +8,13 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() {
+  experience: any;
+
+  constructor(private timeDiffSvc: TimeDifference) {
   }
 
   ngOnInit() {
-
+    this.experience = this.timeDiffSvc.getExperience();
   }
 
   public getClipPath(element: HTMLElement): string {

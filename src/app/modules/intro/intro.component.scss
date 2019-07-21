@@ -13,6 +13,25 @@
 
 button {
   background-color: #1DA1F2;
-  color: #343a41;
   outline: none !important;
+  color:white !important;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover{
+  background-color: white;
+  color: #1DA1F2 !important;
+  -webkit-transition: all 0.5s;
+}
+
+.mat-raised-button{
+  box-shadow: 0 3px 1px -2px #1DA1F2, 0 2px 2px 0 #1DA1F2, 0 1px 5px 0 #1DA1F2;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: inherit !important;
 }

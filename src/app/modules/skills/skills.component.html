@@ -244,7 +244,7 @@
       <mat-card>
         <div>
           <mat-card-header>
-            <h5 class="font-lucidia">Other Skills/Frameworks</h5>
+            <h5 class="font-lucidia">Other Tools/Frameworks</h5>
           </mat-card-header>
           <mat-card-content>
             <ul class="text-grey">
@@ -290,6 +290,111 @@
           [iLeft]="getIConPositionLeft(expressJS)"
           [iTop]="getIConPositionTop(expressJS)"
           [lastUsed]="2018"
+        ></app-skills-clip-card>
+      </mat-card>
+    </div>
+    <div class="col-md-6 py-3">
+      <mat-card>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">Management Tools</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #jira>Jira</li>
+              <li #xray>XRay</li>
+              <li #testRails>Test Rails</li>
+              <li #excel>Excel</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'Jira'"
+          [experience]="experience"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(jira)"
+          [iLeft]="getIConPositionLeft(jira)"
+          [iTop]="getIConPositionTop(jira)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'X Ray'"
+          [experience]="'1.5 years'"
+          [rating]="'3/5'"
+          [clipCSS]="getClipPath(xray)"
+          [iLeft]="getIConPositionLeft(xray)"
+          [iTop]="getIConPositionTop(xray)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Test Rails'"
+          [experience]="'4 months'"
+          [rating]="'1/5'"
+          [clipCSS]="getClipPath(testRails)"
+          [iLeft]="getIConPositionLeft(testRails)"
+          [iTop]="getIConPositionTop(testRails)"
+          [lastUsed]="2017"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Excel'"
+          [rating]="'2/5'"
+          [clipCSS]="getClipPath(excel)"
+          [iLeft]="getIConPositionLeft(excel)"
+          [iTop]="getIConPositionTop(excel)"
+          [lastUsed]="2017"
+        ></app-skills-clip-card>
+      </mat-card>
+    </div>
+    <div class="col-md-6 py-3">
+      <mat-card>
+        <div>
+          <mat-card-header>
+            <h5 class="font-lucidia">IDEs</h5>
+          </mat-card-header>
+          <mat-card-content>
+            <ul class="text-grey">
+              <li #eclipse>Eclipse</li>
+              <li #idea>IntelliJ Idea</li>
+              <li #vscode>Visual Studio Code</li>
+              <li #webstorm>WebStorm</li>
+              <li #pycharm>Pycharm</li>
+            </ul>
+          </mat-card-content>
+        </div>
+        <app-skills-clip-card
+          [title]="'Eclipse'"
+          [clipCSS]="getClipPath(eclipse)"
+          [iLeft]="getIConPositionLeft(eclipse)"
+          [iTop]="getIConPositionTop(eclipse)"
+          [lastUsed]="2018"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Intellij Idea'"
+          [clipCSS]="getClipPath(idea)"
+          [iLeft]="getIConPositionLeft(idea)"
+          [iTop]="getIConPositionTop(idea)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'VS Code'"
+          [clipCSS]="getClipPath(vscode)"
+          [iLeft]="getIConPositionLeft(vscode)"
+          [iTop]="getIConPositionTop(vscode)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Webstorm'"
+          [clipCSS]="getClipPath(webstorm)"
+          [iLeft]="getIConPositionLeft(webstorm)"
+          [iTop]="getIConPositionTop(webstorm)"
+          [lastUsed]="2019"
+        ></app-skills-clip-card>
+        <app-skills-clip-card
+          [title]="'Pycharm'"
+          [clipCSS]="getClipPath(pycharm)"
+          [iLeft]="getIConPositionLeft(pycharm)"
+          [iTop]="getIConPositionTop(pycharm)"
+          [lastUsed]="2019"
         ></app-skills-clip-card>
       </mat-card>
     </div>
