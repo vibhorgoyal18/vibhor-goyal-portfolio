@@ -19,11 +19,10 @@ h5 a:hover{
 }
 
 .mat-card{
-  background-color: #1DA1F2;
-  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 94%, #1DA1F2 100%);
-  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 94%, #1DA1F2 100%);
-  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 94%, #1DA1F2 100%);
-  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 94%, #1DA1F2 100%);
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 94%, #1DA1F2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1DA1F2', GradientType=1 );
+  background-color: lightseagreen;
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
 }
