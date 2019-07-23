@@ -12,6 +12,7 @@ import { ProfileSummaryComponent } from './modules/profile-summary/profile-summa
 import {TimeDifference} from './services/time-difference';
 import { SkillsComponent } from './modules/skills/skills.component';
 import { SkillsClipCardComponent } from './modules/shared/skills-clip-card/skills-clip-card.component';
+import { WorkExperienceComponent } from './modules/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SkillsClipCardComponent } from './modules/shared/skills-clip-card/skill
     IntroComponent,
     ProfileSummaryComponent,
     SkillsComponent,
-    SkillsClipCardComponent
+    SkillsClipCardComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ export class SkillsClipCardComponent implements OnInit {
   @Input() clipCSS: string;
   @Input() iTop: string;
   @Input() iLeft: string;
+  @Input() iRight: string;
   @Input() title: string;
   @Input() lastUsed: string;
 
@@ -27,7 +28,11 @@ export class SkillsClipCardComponent implements OnInit {
   }
 
   getIconPosition() {
-    return this.sanitizer.bypassSecurityTrustStyle(`position: absolute;top: ${this.iTop};left: ${this.iLeft};`);
+    if (this.iLeft) {
+      return this.sanitizer.bypassSecurityTrustStyle(`position: absolute;top: ${this.iTop};left: ${this.iLeft};`);
+    } else if (this.iRight) {
+      return this.sanitizer.bypassSecurityTrustStyle(`position: absolute;top: ${this.iTop};right: ${this.iRight};`);
+    }
   }
 
 }
