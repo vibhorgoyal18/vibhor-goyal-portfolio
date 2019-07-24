@@ -25,13 +25,11 @@ export class SkillsComponent implements OnInit {
 
   public getIConPositionLeft(element: HTMLElement): string {
     const offsetX = element.offsetLeft + element.offsetWidth - 21;
-    console.log(offsetX);
     return offsetX + 'px';
   }
 
   public getIConPositionTop(element: HTMLElement): string {
     const offsetY = element.offsetTop + (element.offsetHeight / 2) - 8;
-    console.log(offsetY);
     return offsetY + 'px';
   }
 
