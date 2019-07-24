@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {MainComponent} from './modules/main/main.component';
 
@@ -13,9 +13,4 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {
-}
+export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, initialNavigation: 'enabled' });
