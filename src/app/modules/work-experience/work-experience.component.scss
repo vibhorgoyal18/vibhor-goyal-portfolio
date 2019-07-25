@@ -1,5 +1,5 @@
 h5 a{
-  color: lightseagreen !important;
+  color: #BDBEED !important;
   -webkit-transition: all 0.3s;
 }
 
@@ -19,10 +19,17 @@ h5 a:hover{
 }
 
 .mat-card{
-  background-color: lightseagreen;
-  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
-  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
-  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
-  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, lightseagreen 100%);
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #BDBEED 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #BDBEED 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #BDBEED 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #BDBEED 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #BDBEED 100%);
+}
+
+.mat-card:hover {
+  box-shadow: 0 2px 1px -1px #BDBEED, 0 1px 1px 0 #BDBEED, 0 1px 3px 0 #BDBEED !important;
+}
+
+h5{
+  color: #BDBEED !important;
 }

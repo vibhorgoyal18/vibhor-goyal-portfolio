@@ -13,6 +13,7 @@ import {TimeDifference} from './services/time-difference';
 import { SkillsComponent } from './modules/skills/skills.component';
 import { SkillsClipCardComponent } from './modules/shared/skills-clip-card/skills-clip-card.component';
 import { WorkExperienceComponent } from './modules/work-experience/work-experience.component';
+import { ProjectsComponent } from './modules/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WorkExperienceComponent } from './modules/work-experience/work-experien
     ProfileSummaryComponent,
     SkillsComponent,
     SkillsClipCardComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

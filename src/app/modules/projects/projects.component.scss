@@ -1,0 +1,19 @@
+.mat-card{
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #f77e94 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #f77e94 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #f77e94 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #f77e94 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 84%, #f77e94 100%);
+}
+
+ul{
+  padding-right: 15%;
+}
+
+.mat-card:hover {
+  box-shadow: 0 2px 1px -1px #f77e94, 0 1px 1px 0 #f77e94, 0 1px 3px 0 #f77e94 !important;
+}
+
+h5{
+  color: #f77e94 !important;
+}
