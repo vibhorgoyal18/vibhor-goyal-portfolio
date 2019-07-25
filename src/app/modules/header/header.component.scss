@@ -18,7 +18,7 @@ button {
   -webkit-transition: all 0.5s;
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand:hover, .nav-link:hover, .navbar-brand:focus, .nav-link:focus {
   color: #b5b5b5 !important;
   -webkit-transition: all 0.5s;
 }

@@ -45,7 +45,7 @@
   min-height: 200px;
 }
 
-.mat-card:hover {
+.mat-card:hover, .mat-card:focus {
   box-shadow: 0 2px 1px -1px lightseagreen, 0 1px 1px 0 lightseagreen, 0 1px 3px 0 lightseagreen !important;
 }
 
