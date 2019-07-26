@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {element} from 'protractor';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-footer',
@@ -14,7 +15,7 @@ export class FooterComponent implements OnInit, AfterViewInit {
   @ViewChild('footerText', {static: false}) text: ElementRef;
 
 
-  constructor() {
+  constructor(private toastrServcie: ToastrService) {
   }
 
   ngOnInit() {
@@ -26,8 +27,17 @@ export class FooterComponent implements OnInit, AfterViewInit {
     } else {
       this.height = '400px';
     }
-
   }
 
+  copyToClipboard(item) {
+    const listener = (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (item));
+      e.preventDefault();
+    };
 
+    document.addEventListener('copy', listener);
+    document.execCommand('copy');
+    document.removeEventListener('copy', listener);
+    this.toastrServcie.success(`Number ${item} copied to clipboard`);
+  }
 }

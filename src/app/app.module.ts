@@ -19,6 +19,8 @@ import {AchievementsComponent} from './modules/achievements/achievements.compone
 import { CertificatesComponent } from './modules/certificates/certificates.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import {AgmCoreModule} from '@agm/core';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,12 @@ import {AgmCoreModule} from '@agm/core';
     MatCardModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAUEOl-ShZUmyZVNxdWrvruKv3PeMAMlg0'
-    })
+    }),
+    ToastrModule.forRoot({
+      timeOut: 1000000,
+      positionClass: 'toast-top-right'
+    }),
+    BrowserAnimationsModule
   ],
   providers: [TimeDifference],
   bootstrap: [AppComponent]
