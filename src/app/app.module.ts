@@ -14,6 +14,7 @@ import { SkillsComponent } from './modules/skills/skills.component';
 import { SkillsClipCardComponent } from './modules/shared/skills-clip-card/skills-clip-card.component';
 import { WorkExperienceComponent } from './modules/work-experience/work-experience.component';
 import { ProjectsComponent } from './modules/projects/projects.component';
+import { EducationComponent } from './modules/education/education.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProjectsComponent } from './modules/projects/projects.component';
     SkillsComponent,
     SkillsClipCardComponent,
     WorkExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

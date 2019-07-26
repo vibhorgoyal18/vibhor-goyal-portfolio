@@ -7,17 +7,17 @@
   background-color: rgb(9, 201, 153);
   transition: all .5s ease-in-out;
 
-  &:hover {
+  &:hover, &:focus {
     clip-path: circle(75%) !important;
     background: lightseagreen;
     z-index: 2;
   }
 
-  &:hover .row{
+  &:hover .row, &:focus .row{
     opacity: 1 !important;
   }
 
-  &:hover span {
+  &:hover span, &:focus span {
     color: rgba(255, 255, 255, 0)
   }
 
