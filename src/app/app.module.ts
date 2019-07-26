@@ -48,7 +48,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       apiKey: 'AIzaSyAUEOl-ShZUmyZVNxdWrvruKv3PeMAMlg0'
     }),
     ToastrModule.forRoot({
-      timeOut: 1000000,
+      timeOut: 10000,
       positionClass: 'toast-top-right'
     }),
     BrowserAnimationsModule
