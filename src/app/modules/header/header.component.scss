@@ -14,17 +14,23 @@ button {
 }
 
 .navbar-brand {
-  animation: blinkingText 1s;
+  animation: blinkingText 2s;
 }
 
 @keyframes blinkingText {
   0% {
     color: white;
   }
-  10% {
+  5% {
     color: transparent;
   }
+  10% {
+    color: white;
+  }
   15% {
+    color: transparent;
+  }
+  20% {
     color: white;
   }
   25% {
@@ -33,10 +39,16 @@ button {
   30% {
     color: white;
   }
-  40% {
+  35% {
     color: transparent;
   }
+  40% {
+    color: white;
+  }
   45% {
+    color: transparent;
+  }
+  50% {
     color: white;
   }
   55% {
@@ -44,6 +56,15 @@ button {
   }
   60% {
     color: white;
+  }
+  65% {
+    color: transparent;
+  }
+  70% {
+    color: white;
+  }
+  75% {
+    color: transparent;
   }
   100%{
     color: #1DA1F2;
