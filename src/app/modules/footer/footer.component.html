@@ -1,12 +1,34 @@
-<div class="container">
+<div class="container bg-dark">
   <div class="row">
-    <div class="col-md-6">
-      <h3>Contact me on:</h3>
+    <div class="col-md-4 col-sm-12">
+      <div class="row" #footerText>
+        <div class="col-12 text-white px-4 font-lucidia footer-text">
+          <p>Hope you liked my profile.<br>
+            I am a quick learner with a hobby of learning new technologies, any technology I can get my hands dirty
+            with.<br>
+            Technologies other than what mentioned above, I have learnt so far are: Jira Administration, Cpanel, Google
+            Cloud Platform and Azure
+            <br><br>
+            You can contact me on any of the medium listed below.</p>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-linkedin text-white" aria-hidden="true"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-phone text-white " aria-hidden="true"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-whatsapp fa-whatsapp text-white" aria-hidden="true"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <agm-map [latitude]='latitude' [longitude]='longitude'>
-      <agm-marker [latitude]='latitude' [longitude]='longitude'></agm-marker>
-    </agm-map>
+    <div class="col-md-8 col-sm-12 map">
+      <agm-map [latitude]='latitude' [longitude]='longitude' [style.height]="height">
+        <agm-marker [latitude]='latitude' [longitude]='longitude'></agm-marker>
+      </agm-map>
+    </div>
   </div>
 </div>

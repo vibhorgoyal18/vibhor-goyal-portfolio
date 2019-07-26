@@ -1,3 +1,26 @@
-agm-map {
-  height: 300px;
+i {
+  margin-left: 15px;
+  font-size: 24px !important;
+  cursor: pointer;
+
+}
+
+i:hover {
+  color: #1DA1F2 !important;
+  -webkit-transition: all 0.5s;
+  font-size: 27px !important;
+
+}
+
+.footer-text {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.col-3{
+  padding-bottom: 15px;
+}
+
+.map{
+  padding-right: 0;
 }
