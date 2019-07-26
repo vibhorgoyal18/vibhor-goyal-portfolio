@@ -18,6 +18,7 @@ import { EducationComponent } from './modules/education/education.component';
 import {AchievementsComponent} from './modules/achievements/achievements.component';
 import { CertificatesComponent } from './modules/certificates/certificates.component';
 import { FooterComponent } from './modules/footer/footer.component';
+import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,10 @@ import { FooterComponent } from './modules/footer/footer.component';
     RouterModule,
     AppRoutingModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAUEOl-ShZUmyZVNxdWrvruKv3PeMAMlg0'
+    })
   ],
   providers: [TimeDifference],
   bootstrap: [AppComponent]

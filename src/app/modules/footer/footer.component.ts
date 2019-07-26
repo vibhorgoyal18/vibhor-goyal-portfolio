@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  latitude = -28.68352;
+  longitude = -147.20785;
+  mapType = 'roadmap';
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
