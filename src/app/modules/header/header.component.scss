@@ -14,61 +14,142 @@ button {
 }
 
 .navbar-brand {
+  font-size: 20px;
   animation: blinkingText 2s;
+  position: relative;
+  top: 0;
+  left: 0;
   z-index: 3;
 }
 
 @keyframes blinkingText {
   0% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   5% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   10% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   15% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   20% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   25% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   30% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   35% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   40% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   45% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   50% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   55% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   60% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   65% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   70% {
     color: white;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
   }
   75% {
     color: transparent;
+    position: fixed;
+    top: calc(100vh/2 - 20px);
+    left: calc(100vw/2 - 144px);
+    font-size: 40px;
+    
+  }
+  99% {
+    color: #1DA1F2;
+    position: fixed;
+    top: 8px;
+    left: 16px;
+    font-size: 20px;
+
   }
   100%{
     color: #1DA1F2;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 20px;
   }
 }
 

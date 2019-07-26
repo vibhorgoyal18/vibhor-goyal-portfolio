@@ -1,0 +1,18 @@
+.container{
+  padding-left: 0;
+  padding-right: 0;
+  animation: main 3.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes main {
+  0%{
+    opacity: 0;
+  }
+  71%{
+    opacity: 0;
+  }
+  100%{
+    opacity: initial;
+  }
+}
