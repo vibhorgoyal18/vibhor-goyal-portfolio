@@ -7,9 +7,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  latitude = -28.68352;
-  longitude = -147.20785;
-  mapType = 'roadmap';
+  latitude = 28.5769245;
+  longitude = 77.391029;
 
   constructor() {
   }
