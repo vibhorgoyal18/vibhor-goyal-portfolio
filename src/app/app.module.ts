@@ -15,6 +15,9 @@ import { SkillsClipCardComponent } from './modules/shared/skills-clip-card/skill
 import { WorkExperienceComponent } from './modules/work-experience/work-experience.component';
 import { ProjectsComponent } from './modules/projects/projects.component';
 import { EducationComponent } from './modules/education/education.component';
+import {AchievementsComponent} from './modules/achievements/achievements.component';
+import { CertificatesComponent } from './modules/certificates/certificates.component';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { EducationComponent } from './modules/education/education.component';
     SkillsClipCardComponent,
     WorkExperienceComponent,
     ProjectsComponent,
-    EducationComponent
+    EducationComponent,
+    AchievementsComponent,
+    CertificatesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

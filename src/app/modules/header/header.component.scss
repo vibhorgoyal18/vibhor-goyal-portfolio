@@ -8,9 +8,46 @@ button {
 
 }
 
-.navbar-brand, .nav-link{
+.navbar-brand, .nav-link {
   color: #1DA1F2 !important;
   -webkit-transition: all 0.5s;
+}
+
+.navbar-brand {
+  animation: blinkingText 1s;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: white;
+  }
+  10% {
+    color: transparent;
+  }
+  15% {
+    color: white;
+  }
+  25% {
+    color: transparent;
+  }
+  30% {
+    color: white;
+  }
+  40% {
+    color: transparent;
+  }
+  45% {
+    color: white;
+  }
+  55% {
+    color: transparent;
+  }
+  60% {
+    color: white;
+  }
+  100%{
+    color: #1DA1F2;
+  }
 }
 
 .fa, .name {

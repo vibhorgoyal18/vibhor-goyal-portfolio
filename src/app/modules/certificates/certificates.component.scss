@@ -1,0 +1,35 @@
+h5 a {
+  color: #EDC7A7 !important;
+  -webkit-transition: all 0.3s;
+}
+
+h5 a:hover {
+  color: #1978f2 !important;
+  -webkit-transition: all 0.3s;
+}
+
+.row .info {
+  color: #b5b5b5;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.label {
+  width: 132px !important;
+}
+
+.mat-card {
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 84%, #EDC7A7 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 84%, #EDC7A7 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 84%, #EDC7A7 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 84%, #EDC7A7 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 84%, #EDC7A7 100%);
+}
+
+.mat-card:hover, .mat-card:focus {
+  box-shadow: 0 2px 1px -1px #EDC7A7, 0 1px 1px 0 #EDC7A7, 0 1px 3px 0 #EDC7A7 !important;
+}
+
+h5 {
+  color: #EDC7A7 !important;
+}
